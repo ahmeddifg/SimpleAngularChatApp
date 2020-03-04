@@ -1,0 +1,17 @@
+.mine{
+  display: inline-block;
+  color: azure;
+  background-color: #0b12ff;
+  border: gray medium;
+  border-radius: 15px;
+  padding: .5%;
+}
+
+.other{
+  display: inline-block;
+  color: black;
+  background-color: white;
+  border: gray medium;
+  border-radius: 15px;
+  padding: .5%;
+}

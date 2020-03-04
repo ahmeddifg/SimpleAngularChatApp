@@ -1,0 +1,7 @@
+<input [(ngModel)]="newMessage" (keyup)="$event.keyCode == 13 && sendMessage()"/>
+<button (click)="sendMessage()">Send Message</button>
+<hr>
+<div *ngFor="let message of messageList">
+  <p [ngClass]="{'mine':message.id===myCurrentId , 'other':message.id!==myCurrentId}">
+    <small >{{message.id===myCurrentId?'Me:':'Other:'}}</small> {{message.data}}</p>
+</div>
